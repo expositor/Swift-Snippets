@@ -12,7 +12,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        //Persist Snippet
+        
+        Persist(key: "Defaultfs").get()
+        var moo: NSString = Persist(key: "Default").get() as NSString
+        println(moo)
+
     }
 
     override func didReceiveMemoryWarning() {
