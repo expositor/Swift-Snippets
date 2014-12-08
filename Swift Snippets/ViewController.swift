@@ -14,9 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         //Persist Snippet
-        
-        Persist(key: "Defaultfs").get()
-        var moo: NSString = Persist(key: "Default").get() as NSString
+        Persist(key: "Defaultfs").store("Default")
+        var moo: NSString = Persist(key: "Defaultfs").get() as NSString
         println(moo)
 
     }
