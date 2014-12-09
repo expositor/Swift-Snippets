@@ -38,7 +38,7 @@ public class Persist {
                 
                 if result == nil{
                     
-                    result = "default string"
+                    result = "nil string"
                 }
                 
                 return result!

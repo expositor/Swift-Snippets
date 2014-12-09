@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C15740C31A359EC70029BA0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15740C21A359EC70029BA0B /* AppDelegate.swift */; };
-		C15740C51A359EC70029BA0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15740C41A359EC70029BA0B /* ViewController.swift */; };
+		C15740C51A359EC70029BA0B /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15740C41A359EC70029BA0B /* ContainerViewController.swift */; };
 		C15740C81A359EC70029BA0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15740C61A359EC70029BA0B /* Main.storyboard */; };
 		C15740CA1A359EC70029BA0B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15740C91A359EC70029BA0B /* Images.xcassets */; };
 		C15740CD1A359EC70029BA0B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C15740CB1A359EC70029BA0B /* LaunchScreen.xib */; };
@@ -16,6 +16,11 @@
 		C15740E31A359EFB0029BA0B /* Persist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15740E21A359EFB0029BA0B /* Persist.swift */; };
 		C15E8A101A3616930031C448 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15E8A0F1A3616930031C448 /* SwiftyJSON.swift */; };
 		C15E8A121A3617BE0031C448 /* SwiftColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15E8A111A3617BE0031C448 /* SwiftColors.swift */; };
+		C15E8A141A361E080031C448 /* ViewExtensionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15E8A131A361E080031C448 /* ViewExtensionController.swift */; };
+		C168BD671A366A14004B5015 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C168BD661A366A14004B5015 /* WebViewController.swift */; };
+		C168BD691A366A76004B5015 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C168BD681A366A76004B5015 /* ModalViewController.swift */; };
+		C168BD6D1A3699D0004B5015 /* WebViewControllerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C168BD6C1A3699D0004B5015 /* WebViewControllerConfiguration.swift */; };
+		C194D5D91A3637EB0071F53E /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C194D5D81A3637EB0071F53E /* MainPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +37,7 @@
 		C15740BD1A359EC70029BA0B /* Swift Snippets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Snippets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15740C11A359EC70029BA0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C15740C21A359EC70029BA0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C15740C41A359EC70029BA0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C15740C41A359EC70029BA0B /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		C15740C71A359EC70029BA0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C15740C91A359EC70029BA0B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C15740CC1A359EC70029BA0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -42,6 +47,11 @@
 		C15740E21A359EFB0029BA0B /* Persist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persist.swift; sourceTree = "<group>"; };
 		C15E8A0F1A3616930031C448 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		C15E8A111A3617BE0031C448 /* SwiftColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftColors.swift; sourceTree = "<group>"; };
+		C15E8A131A361E080031C448 /* ViewExtensionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtensionController.swift; sourceTree = "<group>"; };
+		C168BD661A366A14004B5015 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		C168BD681A366A76004B5015 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		C168BD6C1A3699D0004B5015 /* WebViewControllerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewControllerConfiguration.swift; sourceTree = "<group>"; };
+		C194D5D81A3637EB0071F53E /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +93,14 @@
 		C15740BF1A359EC70029BA0B /* Swift Snippets */ = {
 			isa = PBXGroup;
 			children = (
+				C168BD6B1A3699B4004B5015 /* Custom Library */,
 				C15E8A0D1A3614200031C448 /* Library */,
 				C15740C21A359EC70029BA0B /* AppDelegate.swift */,
-				C15740C41A359EC70029BA0B /* ViewController.swift */,
 				C15740C61A359EC70029BA0B /* Main.storyboard */,
+				C15740C41A359EC70029BA0B /* ContainerViewController.swift */,
+				C194D5D81A3637EB0071F53E /* MainPageViewController.swift */,
+				C168BD661A366A14004B5015 /* WebViewController.swift */,
+				C168BD681A366A76004B5015 /* ModalViewController.swift */,
 				C15740C91A359EC70029BA0B /* Images.xcassets */,
 				C15740CB1A359EC70029BA0B /* LaunchScreen.xib */,
 				C15740C01A359EC70029BA0B /* Supporting Files */,
@@ -125,8 +139,17 @@
 				C15E8A111A3617BE0031C448 /* SwiftColors.swift */,
 				C15E8A0F1A3616930031C448 /* SwiftyJSON.swift */,
 				C15740E21A359EFB0029BA0B /* Persist.swift */,
+				C15E8A131A361E080031C448 /* ViewExtensionController.swift */,
 			);
 			name = Library;
+			sourceTree = "<group>";
+		};
+		C168BD6B1A3699B4004B5015 /* Custom Library */ = {
+			isa = PBXGroup;
+			children = (
+				C168BD6C1A3699D0004B5015 /* WebViewControllerConfiguration.swift */,
+			);
+			name = "Custom Library";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,11 +252,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C15740C51A359EC70029BA0B /* ViewController.swift in Sources */,
+				C15740C51A359EC70029BA0B /* ContainerViewController.swift in Sources */,
 				C15740C31A359EC70029BA0B /* AppDelegate.swift in Sources */,
+				C194D5D91A3637EB0071F53E /* MainPageViewController.swift in Sources */,
 				C15740E31A359EFB0029BA0B /* Persist.swift in Sources */,
 				C15E8A101A3616930031C448 /* SwiftyJSON.swift in Sources */,
+				C15E8A141A361E080031C448 /* ViewExtensionController.swift in Sources */,
 				C15E8A121A3617BE0031C448 /* SwiftColors.swift in Sources */,
+				C168BD691A366A76004B5015 /* ModalViewController.swift in Sources */,
+				C168BD6D1A3699D0004B5015 /* WebViewControllerConfiguration.swift in Sources */,
+				C168BD671A366A14004B5015 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
