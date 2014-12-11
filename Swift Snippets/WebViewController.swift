@@ -18,7 +18,7 @@ class WebViewController: ContainerViewController, WKScriptMessageHandler {
     var baseURL: NSURL!
 
     var receivedURL: String?
-    
+
     override func loadView() {
         
         super.loadView()
