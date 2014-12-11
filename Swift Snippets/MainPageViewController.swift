@@ -16,7 +16,14 @@ protocol MainPageViewControllerDelegate {
 
 class MainPageViewController: ContainerViewController {
 
-    var sendURLString = "/"
+    var sendURLString: String!
+    
+    override func loadView() {
+        
+        super.loadView()
+
+        sendURLString = "/"
+    }
     
     var delegate: MainPageViewControllerDelegate?
     

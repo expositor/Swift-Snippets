@@ -10,7 +10,14 @@ import UIKit
 
 class CategoryPageViewController: ContainerViewController {
 
-    var sendURLString = "/new-arrivals.html"
+    var sendURLString: String!
+    
+    override func loadView() {
+        
+        super.loadView()
+        
+        sendURLString = "/new-arrivals.html"
+    }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 
