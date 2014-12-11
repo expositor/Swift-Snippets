@@ -19,23 +19,21 @@ class WebViewController: ContainerViewController, WKScriptMessageHandler {
 
     var receivedURL: String?
     
-    override func viewDidLoad() {
-
-        super.viewDidLoad()
-
-        baseURL = NSURL(string: "http://paretodistribution.com/")
+    override func loadView() {
         
+        super.loadView()
+
+        baseURL = NSURL(string: "http://nicoleleeonline.com/")
+
         let jsFile = NSBundle.mainBundle().pathForResource("script", ofType: "js")
 
         let cssFile = NSBundle.mainBundle().pathForResource("style", ofType: "css")
-        
-        var jsSource = NSString(contentsOfFile: jsFile!, encoding: NSUTF8StringEncoding, error: nil)!
-        
-        var cssSource = String(contentsOfFile: cssFile!)!
 
-        var cssFormatted = " ".join(cssSource.componentsSeparatedByCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()))
+        let jsSource = NSString(contentsOfFile: jsFile!, encoding: NSUTF8StringEncoding, error: nil)!
 
-        var cssScript = WKUserScript(
+        let cssFormatted = " ".join(String(contentsOfFile: cssFile!)!.componentsSeparatedByCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()))
+
+        let cssScript = WKUserScript(
             
             source: "document.getElementsByTagName('head')[0].innerHTML += '<style>\(cssFormatted)</style>';",
             
@@ -44,36 +42,42 @@ class WebViewController: ContainerViewController, WKScriptMessageHandler {
             forMainFrameOnly: true
         )
 
-        var userScript = WKUserScript(
-
+        let userScript = WKUserScript(
+            
             source: jsSource,
-
+            
             injectionTime: WKUserScriptInjectionTime.AtDocumentEnd,
-
+            
             forMainFrameOnly: true
         )
         
-        var contentController = WKUserContentController();
-        
+        let contentController = WKUserContentController();
+
         contentController.addUserScript(cssScript)
-        
+
         contentController.addUserScript(userScript)
-        
+
         contentController.addScriptMessageHandler(self, name: "hello")
         
         contentController.addScriptMessageHandler(self, name: "goodbye")
         
-        var config = WKWebViewConfiguration()
-
+        let config = WKWebViewConfiguration()
+        
         config.userContentController = contentController
-
+        
         self.webView = WKWebView(frame: self.view.frame, configuration: config)
+
+    }
+    
+    override func viewDidLoad() {
+
+        super.viewDidLoad()
 
         self.view = self.webView!
 
-        var fullURL = NSURL(string: receivedURL!, relativeToURL: baseURL)
+        let fullURL = NSURL(string: receivedURL!, relativeToURL: baseURL)
 
-        var req = NSURLRequest(URL:fullURL!)
+        let req = NSURLRequest(URL:fullURL!)
         
         self.webView!.loadRequest(req)
 

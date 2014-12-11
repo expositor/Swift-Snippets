@@ -1,8 +1,3 @@
-a{
-    font-size: 100px;
-}
-
-a{
-    
-    color: black;
+.menu-wrapper {
+    display: none !important;
 }

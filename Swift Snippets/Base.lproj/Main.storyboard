@@ -22,10 +22,6 @@
                                     <segue destination="5VK-p9-ovZ" kind="embed" identifier="mainPageEmbedSegue" id="Dpr-vI-eiv"/>
                                 </connections>
                             </containerView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="LBa-Fe-gXP">
-                                <rect key="frame" x="0.0" y="44" width="600" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -33,9 +29,6 @@
                             <constraint firstItem="Tcw-mg-zwe" firstAttribute="leading" secondItem="j2s-yE-c9j" secondAttribute="leading" id="g7G-bV-naN"/>
                             <constraint firstItem="Tcw-mg-zwe" firstAttribute="bottom" secondItem="Gvv-yl-R5r" secondAttribute="top" id="mWO-i8-P4P"/>
                             <constraint firstAttribute="trailing" secondItem="Tcw-mg-zwe" secondAttribute="trailing" id="mmS-n8-eQX"/>
-                            <constraint firstItem="LBa-Fe-gXP" firstAttribute="top" secondItem="HOm-uW-iPN" secondAttribute="bottom" id="rXI-9S-34C"/>
-                            <constraint firstItem="LBa-Fe-gXP" firstAttribute="leading" secondItem="Tcw-mg-zwe" secondAttribute="leading" id="xIq-aQ-LDS"/>
-                            <constraint firstItem="LBa-Fe-gXP" firstAttribute="trailing" secondItem="Tcw-mg-zwe" secondAttribute="trailing" id="yGw-8E-5hB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Main Page" id="K6w-4u-DWP">
@@ -179,7 +172,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bV-XK-R5Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-590" y="-224"/>
+            <point key="canvasLocation" x="-386" y="-217"/>
         </scene>
         <!--Modal View Controller-->
         <scene sceneID="nkd-DE-Mme">
