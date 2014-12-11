@@ -7,7 +7,6 @@
         <!--MainPageViewController-->
         <scene sceneID="klW-MM-heZ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="keQ-7J-hNZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="MainPageViewController" id="nAi-QK-mGq" customClass="MainPageViewController" customModule="Swift_Snippets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HOm-uW-iPN"/>
@@ -23,6 +22,10 @@
                                     <segue destination="5VK-p9-ovZ" kind="embed" identifier="mainPageEmbedSegue" id="Dpr-vI-eiv"/>
                                 </connections>
                             </containerView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="LBa-Fe-gXP">
+                                <rect key="frame" x="0.0" y="44" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -30,6 +33,9 @@
                             <constraint firstItem="Tcw-mg-zwe" firstAttribute="leading" secondItem="j2s-yE-c9j" secondAttribute="leading" id="g7G-bV-naN"/>
                             <constraint firstItem="Tcw-mg-zwe" firstAttribute="bottom" secondItem="Gvv-yl-R5r" secondAttribute="top" id="mWO-i8-P4P"/>
                             <constraint firstAttribute="trailing" secondItem="Tcw-mg-zwe" secondAttribute="trailing" id="mmS-n8-eQX"/>
+                            <constraint firstItem="LBa-Fe-gXP" firstAttribute="top" secondItem="HOm-uW-iPN" secondAttribute="bottom" id="rXI-9S-34C"/>
+                            <constraint firstItem="LBa-Fe-gXP" firstAttribute="leading" secondItem="Tcw-mg-zwe" secondAttribute="leading" id="xIq-aQ-LDS"/>
+                            <constraint firstItem="LBa-Fe-gXP" firstAttribute="trailing" secondItem="Tcw-mg-zwe" secondAttribute="trailing" id="yGw-8E-5hB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Main Page" id="K6w-4u-DWP">
@@ -48,13 +54,14 @@
                         <segue destination="nV5-sJ-V9N" kind="presentation" identifier="modalSegue" id="Zgx-Lm-vQw"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="keQ-7J-hNZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1551" y="200"/>
+            <point key="canvasLocation" x="1087" y="560"/>
         </scene>
-        <!--View Controller-->
+        <!--CategoryPageViewController-->
         <scene sceneID="Bok-tW-FDh">
             <objects>
-                <viewController id="vwJ-tC-e4a" sceneMemberID="viewController">
+                <viewController title="CategoryPageViewController" id="vwJ-tC-e4a" customClass="CategoryPageViewController" customModule="Swift_Snippets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sBR-Qy-EuH"/>
                         <viewControllerLayoutGuide type="bottom" id="ssa-sV-08W"/>
@@ -66,7 +73,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5nm-nG-AbP">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <connections>
-                                    <segue destination="5VK-p9-ovZ" kind="embed" id="NTf-4o-5sk"/>
+                                    <segue destination="5VK-p9-ovZ" kind="embed" identifier="categoryPageEmbedSegue" id="NTf-4o-5sk"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -78,10 +85,13 @@
                             <constraint firstItem="5nm-nG-AbP" firstAttribute="bottom" secondItem="ssa-sV-08W" secondAttribute="top" id="sXP-wc-djy"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="CategoryPage" id="HVX-X6-0FE">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="JVo-UJ-SXj"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Mi-YO-8K1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1551" y="1140"/>
+            <point key="canvasLocation" x="1087" y="1308"/>
         </scene>
         <!--ContainerViewController-->
         <scene sceneID="RJR-79-I2s">
@@ -113,12 +123,67 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="naT-Af-gLp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="200"/>
+            <point key="canvasLocation" x="291" y="-224"/>
+        </scene>
+        <!--Left Menu Table View Controller-->
+        <scene sceneID="YtB-27-KiH">
+            <objects>
+                <tableViewController id="Bzp-7L-MEK" customClass="LeftMenuTableViewController" customModule="Swift_Snippets" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="eJs-ZL-XLa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="O5h-Yb-fKu">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="O5h-Yb-fKu" id="Ev5-nx-4tV">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="t43-tq-eg4" kind="show" identifier="showMenuDetailSegue" id="Xff-ya-jWJ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Bzp-7L-MEK" id="Xwx-jF-l00"/>
+                            <outlet property="delegate" destination="Bzp-7L-MEK" id="h5M-JB-GER"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="qd5-Hq-Kh3"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qd7-6n-jtQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1092" y="-217"/>
+        </scene>
+        <!--Left Menu Table View Detail Controller-->
+        <scene sceneID="tNV-lY-ktk">
+            <objects>
+                <tableViewController id="t43-tq-eg4" customClass="LeftMenuTableViewDetailController" customModule="Swift_Snippets" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="fgC-Bd-Gqe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="rz7-ng-tck">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rz7-ng-tck" id="5Tp-wK-YB3">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="t43-tq-eg4" id="2Go-Pk-mtP"/>
+                            <outlet property="delegate" destination="t43-tq-eg4" id="Y7X-Cd-WZc"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2bV-XK-R5Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-590" y="-224"/>
         </scene>
         <!--Modal View Controller-->
         <scene sceneID="nkd-DE-Mme">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Afw-3x-75F" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Modal View Controller" id="nV5-sJ-V9N" customClass="ModalViewController" customModule="Swift_Snippets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xaX-B7-K7F"/>
@@ -157,13 +222,13 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Afw-3x-75F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="831" y="950"/>
+            <point key="canvasLocation" x="291" y="1308"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MYU-W6-OdZ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fL2-TI-g64" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jEH-I6-Fcm" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GpT-bx-8Mg">
@@ -175,13 +240,13 @@
                         <segue destination="nAi-QK-mGq" kind="relationship" relationship="rootViewController" id="hNG-pC-csv"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fL2-TI-g64" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="831" y="200"/>
+            <point key="canvasLocation" x="291" y="560"/>
         </scene>
         <!--WebViewController-->
         <scene sceneID="Jsr-5V-5t9">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="w7b-k4-V01" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="WebViewController" automaticallyAdjustsScrollViewInsets="NO" id="5VK-p9-ovZ" customClass="WebViewController" customModule="Swift_Snippets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="l24-vW-z3a"/>
@@ -205,8 +270,27 @@
                         <outlet property="originalView" destination="jqO-4Y-ft4" id="49o-Ef-yig"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w7b-k4-V01" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2268" y="528"/>
+            <point key="canvasLocation" x="1800" y="916"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yW1-hG-fTx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="flt-Ww-dAI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TMt-UH-htC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Bzp-7L-MEK" kind="relationship" relationship="rootViewController" id="bh0-AY-PeW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Fn-O3-enB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1783" y="-217"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

@@ -32,13 +32,13 @@ public class Persist {
         
         var storedValue: AnyObject {
             
-            get{
+            get {
                 
                 var result: AnyObject! = persist.objectForKey(key) as AnyObject!
                 
-                if result == nil{
+                if result == nil {
                     
-                    result = "nil string"
+                    result = "nil"
                 }
                 
                 return result!

@@ -7,30 +7,8 @@
 //
 
 import UIKit
-import WebKit
 
-class ContainerViewController: UIViewController, WKScriptMessageHandler {
-
-    @IBOutlet var originalView: UIView! = nil
-
-    var webView: WKWebView?
-
-    func userContentController(userContentController: WKUserContentController, didReceiveScriptMessage message: WKScriptMessage) {
-        
-        if(message.name == "hello") {
-        
-            println("JavaScript is sending a message: \(message.body)")
-            
-        } else if (message.name == "goodbye") {
-            
-            println("JavaScript is sending a message: \(message.body)")
-        }
-        
-        let aColor:String = String("green")
-
-        webView?.evaluateJavaScript("changeHeaderColor('\(aColor)')", completionHandler: nil)
-
-    }
+class ContainerViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         
@@ -48,8 +26,24 @@ class ContainerViewController: UIViewController, WKScriptMessageHandler {
 
 }
 
-// Button Controllers Here Yo
+// Slide Out Here Yo
 
 extension ContainerViewController{
     
+    func toggleRightPanel() {
+        
+        
+    }
+
+    func toggleLeftPanel() {
+        
+        println("moo")
+        
+    }
+
+    func collapseSidePanels() {
+        
+        
+    }
+
 }

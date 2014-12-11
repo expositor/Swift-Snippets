@@ -8,9 +8,17 @@
 
 import UIKit
 
+protocol MainPageViewControllerDelegate {
+    func toggleLeftPanel()
+    func toggleRightPanel()
+    func collapseSidePanels()
+}
+
 class MainPageViewController: ContainerViewController {
 
-    var sendURLString = "http://www.google.com"
+    var sendURLString = "/"
+    
+    var delegate: MainPageViewControllerDelegate?
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
@@ -19,13 +27,16 @@ class MainPageViewController: ContainerViewController {
             var vc = segue.destinationViewController as WebViewController
             
             vc.receivedURL = sendURLString
-            
+
         }
     }
 
     @IBAction func openModalButton(sender: AnyObject) {
         
+        toggleLeftPanel()
+
         activateSegueID("modalSegue")
+        
     }
 
     override func didReceiveMemoryWarning() {
