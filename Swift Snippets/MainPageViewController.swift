@@ -16,7 +16,7 @@ protocol MainPageViewControllerDelegate {
 
 class MainPageViewController: ContainerViewController {
 
-    var sendURLString = "/"
+    var sendURLString = "/ios/"
     
     var delegate: MainPageViewControllerDelegate?
     
