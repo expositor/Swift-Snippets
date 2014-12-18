@@ -1,3 +1,6 @@
-.menu-wrapper {
-    display: none !important;
+.showmenu{
+
+    transform: translate3d(0px, 0%, -1px);
+    visibility: visible;
+
 }

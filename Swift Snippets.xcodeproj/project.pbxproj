@@ -11,6 +11,7 @@
 		C12A04161A3A1F7600CD16EC /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = C12A04151A3A1F7600CD16EC /* index.html */; };
 		C148BE271A36CE57001175B9 /* CategoryPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C148BE261A36CE57001175B9 /* CategoryPageViewController.swift */; };
 		C148BE291A36FC79001175B9 /* LeftMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C148BE281A36FC79001175B9 /* LeftMenuTableViewController.swift */; };
+		C1543F181A3A4A0600534DB4 /* LeftMenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1543F171A3A4A0600534DB4 /* LeftMenuList.swift */; };
 		C15740C31A359EC70029BA0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15740C21A359EC70029BA0B /* AppDelegate.swift */; };
 		C15740C51A359EC70029BA0B /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15740C41A359EC70029BA0B /* ContainerViewController.swift */; };
 		C15740C81A359EC70029BA0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15740C61A359EC70029BA0B /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		C12A04151A3A1F7600CD16EC /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		C148BE261A36CE57001175B9 /* CategoryPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryPageViewController.swift; sourceTree = "<group>"; };
 		C148BE281A36FC79001175B9 /* LeftMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuTableViewController.swift; sourceTree = "<group>"; };
+		C1543F171A3A4A0600534DB4 /* LeftMenuList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuList.swift; sourceTree = "<group>"; };
 		C15740BD1A359EC70029BA0B /* Swift Snippets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Snippets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15740C11A359EC70029BA0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C15740C21A359EC70029BA0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				C148BE281A36FC79001175B9 /* LeftMenuTableViewController.swift */,
 				C16A6F441A3770D7004CE196 /* LeftMenuTableViewDetailController.swift */,
 				C168BD681A366A76004B5015 /* ModalViewController.swift */,
+				C1543F171A3A4A0600534DB4 /* LeftMenuList.swift */,
 			);
 			name = "Secondary Views";
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				C15E8A141A361E080031C448 /* ViewExtensionController.swift in Sources */,
 				C15E8A121A3617BE0031C448 /* SwiftColors.swift in Sources */,
 				C168BD691A366A76004B5015 /* ModalViewController.swift in Sources */,
+				C1543F181A3A4A0600534DB4 /* LeftMenuList.swift in Sources */,
 				C168BD6D1A3699D0004B5015 /* WebViewControllerConfiguration.swift in Sources */,
 				C168BD671A366A14004B5015 /* WebViewController.swift in Sources */,
 			);

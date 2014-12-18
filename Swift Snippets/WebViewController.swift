@@ -12,7 +12,7 @@ import WebKit
 class WebViewController: ContainerViewController, WKScriptMessageHandler {
 
     @IBOutlet var originalView: UIView! = nil
-    
+
     var webView: WKWebView?
 
     var baseURL: NSURL!
@@ -23,7 +23,7 @@ class WebViewController: ContainerViewController, WKScriptMessageHandler {
         
         super.loadView()
 
-        baseURL = NSURL(string: "http://nicoleleeonline.com/")
+        baseURL = NSURL(string: "http://nicoleleeonline.com")
 
         let jsFile = NSBundle.mainBundle().pathForResource("script", ofType: "js")
 
@@ -57,7 +57,7 @@ class WebViewController: ContainerViewController, WKScriptMessageHandler {
 
         contentController.addUserScript(userScript)
 
-        contentController.addScriptMessageHandler(self, name: "hello")
+        contentController.addScriptMessageHandler(self, name: "getLink")
         
         contentController.addScriptMessageHandler(self, name: "goodbye")
         
@@ -87,9 +87,11 @@ class WebViewController: ContainerViewController, WKScriptMessageHandler {
 
     func userContentController(userContentController: WKUserContentController, didReceiveScriptMessage message: WKScriptMessage) {
         
-        if(message.name == "hello") {
+        if(message.name == "getLink") {
             
             println("JavaScript is sending a message: \(message.body)")
+            
+            //activateSegueID("secondNavLevelSegue")
             
         } else if (message.name == "goodbye") {
             

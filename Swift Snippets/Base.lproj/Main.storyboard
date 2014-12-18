@@ -7,7 +7,7 @@
         <!--MainPageViewController-->
         <scene sceneID="klW-MM-heZ">
             <objects>
-                <viewController title="MainPageViewController" id="nAi-QK-mGq" customClass="MainPageViewController" customModule="Swift_Snippets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainPageViewController" title="MainPageViewController" id="nAi-QK-mGq" customClass="MainPageViewController" customModule="Swift_Snippets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HOm-uW-iPN"/>
                         <viewControllerLayoutGuide type="bottom" id="Gvv-yl-R5r"/>
@@ -39,7 +39,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" id="pVp-NI-i9K">
                             <connections>
-                                <segue destination="vwJ-tC-e4a" kind="show" id="AaM-04-n8G"/>
+                                <segue destination="vwJ-tC-e4a" kind="show" identifier="secondNavLevelSegue" id="AaM-04-n8G"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -49,12 +49,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="keQ-7J-hNZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1087" y="560"/>
+            <point key="canvasLocation" x="-609" y="1348"/>
         </scene>
         <!--CategoryPageViewController-->
         <scene sceneID="Bok-tW-FDh">
             <objects>
-                <viewController title="CategoryPageViewController" id="vwJ-tC-e4a" customClass="CategoryPageViewController" customModule="Swift_Snippets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CategoryPageViewController" title="CategoryPageViewController" id="vwJ-tC-e4a" customClass="CategoryPageViewController" customModule="Swift_Snippets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sBR-Qy-EuH"/>
                         <viewControllerLayoutGuide type="bottom" id="ssa-sV-08W"/>
@@ -84,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Mi-YO-8K1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1087" y="1308"/>
+            <point key="canvasLocation" x="-609" y="2106"/>
         </scene>
         <!--ContainerViewController-->
         <scene sceneID="RJR-79-I2s">
@@ -116,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="naT-Af-gLp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="291" y="-224"/>
+            <point key="canvasLocation" x="-609" y="-202"/>
         </scene>
         <!--Left Menu Table View Controller-->
         <scene sceneID="YtB-27-KiH">
@@ -146,7 +146,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qd7-6n-jtQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1092" y="-217"/>
+            <point key="canvasLocation" x="-1772" y="-217"/>
         </scene>
         <!--Left Menu Table View Detail Controller-->
         <scene sceneID="tNV-lY-ktk">
@@ -172,7 +172,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bV-XK-R5Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-386" y="-217"/>
+            <point key="canvasLocation" x="-1783" y="-193"/>
         </scene>
         <!--Modal View Controller-->
         <scene sceneID="nkd-DE-Mme">
@@ -217,7 +217,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Afw-3x-75F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="291" y="1308"/>
+            <point key="canvasLocation" x="-1543" y="2092"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MYU-W6-OdZ">
@@ -235,12 +235,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fL2-TI-g64" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="291" y="560"/>
+            <point key="canvasLocation" x="-609" y="524"/>
         </scene>
         <!--WebViewController-->
         <scene sceneID="Jsr-5V-5t9">
             <objects>
-                <viewController title="WebViewController" automaticallyAdjustsScrollViewInsets="NO" id="5VK-p9-ovZ" customClass="WebViewController" customModule="Swift_Snippets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebViewController" title="WebViewController" automaticallyAdjustsScrollViewInsets="NO" id="5VK-p9-ovZ" customClass="WebViewController" customModule="Swift_Snippets" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="l24-vW-z3a"/>
                         <viewControllerLayoutGuide type="bottom" id="Y1V-oz-yf1"/>
@@ -248,14 +248,6 @@
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jqO-4Y-ft4">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCW-tN-qdm">
-                                <rect key="frame" x="82" y="271" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
@@ -265,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w7b-k4-V01" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1800" y="916"/>
+            <point key="canvasLocation" x="215" y="1348"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yW1-hG-fTx">

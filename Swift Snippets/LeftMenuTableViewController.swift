@@ -11,16 +11,16 @@ import JavaScriptCore
 
 class LeftMenuTableViewController: UITableViewController {
 
-    var array = Dictionary<String, Array<String>>()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-         array = [
-            
-            "car": []
-        ]
+    var cars = Dictionary<String, Array<String>>()
 
+    override func viewDidLoad() {
+
+        super.viewDidLoad()
+
+         cars = [
+            "car": [],
+            "names":["toyota","few"],
+        ]
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,17 +37,18 @@ class LeftMenuTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        return array.count
+        return cars.count
 
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
-
         // Configure the cell...
         //cell.selectionStyle = UITableViewCellSelectionStyle.Blue
+
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+        
         return cell
     }
     // Mark: Table View Delegate
